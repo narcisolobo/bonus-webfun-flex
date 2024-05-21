@@ -1,0 +1,67 @@
+h1 {
+  color: rebeccapurple;
+}
+
+.parent {
+  background-color: darkblue;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 150px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.child {
+  background-color: green;
+}
+
+.misbehave {
+  align-self: flex-end;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+header {
+  background-color: darkgoldenrod;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+main {
+  background-color: beige;
+  flex: 2;
+  padding: 20px;
+}
+
+aside {
+  background-color: aquamarine;
+  flex: 1;
+  padding: 20px;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+}
+
+.feature {
+  background-color: lightpink;
+  padding: 20px;
+  flex: 1;
+}

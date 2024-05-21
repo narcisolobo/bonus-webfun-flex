@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus Flexbox Session</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bonus Flexbox Session</h1>
+    <h2>There are two sets of CSS properties in the Flexbox system.</h2>
+    <ol>
+      <li>One set for the parent, aka the "flex-container"</li>
+      <li>One set for the children, aka the "flex-items"</li>
+    </ol>
+    <h3>Flex-Container Properties</h3>
+    <h3>The parent tells its children how to behave.</h3>
+    <ol>
+      <li>
+        <pre>display: flex</pre>
+        This property set to flex will change any element into a flex container.
+      </li>
+      <li>
+        <pre>justify-content</pre>
+        Defines the layout of flex-items in a flex-container on the main axis
+        (x-axis).
+      </li>
+      <li>
+        <pre>align-items</pre>
+        Defines the layout of flex-items in a flex-container on the cross axis
+        (y-axis).
+      </li>
+      <li>
+        <pre>gap</pre>
+        Defines the minimum spacing <em>between</em> flex-items.
+      </li>
+    </ol>
+    <h3>
+      The moment you flex an element, every direct child of that element becomes
+      a flex-item.
+    </h3>
+    <h2>Flex-Item Properties</h2>
+    <ol>
+      <li>
+        <pre>align-self</pre>
+        allows a child to <em>misbehave.</em>
+      </li>
+      <li>
+        <pre>flex</pre>
+        defines how much of the parent a child is allowed to eat
+      </li>
+    </ol>
+    <div class="parent">
+      <div class="child flex-1"><p>child 1</p></div>
+      <div class="child misbehave flex-1"><p>child 2</p></div>
+      <div class="child flex-2"><p>child 3</p></div>
+    </div>
+    <div class="parent">
+      <div class="flex-2 child">flex-2</div>
+      <div class="flex-3 child">flex-3</div>
+    </div>
+    <header>header</header>
+    <div class="container">
+      <div class="flex-container">
+        <main>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            quis eum corporis eveniet ea ab sapiente libero optio quae animi et
+            dolore adipisci quod ad modi, fugit asperiores! Quas, ipsam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            quis eum corporis eveniet ea ab sapiente libero optio quae animi et
+            dolore adipisci quod ad modi, fugit asperiores! Quas, ipsam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            quis eum corporis eveniet ea ab sapiente libero optio quae animi et
+            dolore adipisci quod ad modi, fugit asperiores! Quas, ipsam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            quis eum corporis eveniet ea ab sapiente libero optio quae animi et
+            dolore adipisci quod ad modi, fugit asperiores! Quas, ipsam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            quis eum corporis eveniet ea ab sapiente libero optio quae animi et
+            dolore adipisci quod ad modi, fugit asperiores! Quas, ipsam.
+          </p>
+        </main>
+        <aside>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
+            voluptates sed provident odit error aut dolores obcaecati asperiores
+            ut impedit adipisci quidem nobis in magnam, accusantium possimus qui
+            nostrum! Ullam?
+          </p>
+        </aside>
+      </div>
+      <div class="features">
+        <div class="feature">feature 1</div>
+        <div class="feature">feature 2</div>
+        <div class="feature">feature 3</div>
+      </div>
+    </div>
+  </body>
+</html>
